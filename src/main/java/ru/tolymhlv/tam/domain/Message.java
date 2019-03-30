@@ -1,9 +1,9 @@
 package ru.tolymhlv.tam.domain;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
-import javax.persistence.*;
-import java.time.Clock;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Date;
 
 @Entity
@@ -14,17 +14,15 @@ public class Message {
     private Long id;
 
     private String text;
-
     private Date date;
-
-
-    public Message() {
-    }
-
+    private String filePicture;
 
     public Message(String text) {
         this.text = text;
         this.date = new Date();
+    }
+
+    public Message() {
 
     }
 
@@ -52,4 +50,11 @@ public class Message {
         this.date = date;
     }
 
+    public String getFilePicture() {
+        return filePicture;
+    }
+
+    public void setFilePicture(String filePicture) {
+        this.filePicture = filePicture;
+    }
 }

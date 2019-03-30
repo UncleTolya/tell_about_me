@@ -6,19 +6,14 @@ import org.springframework.util.StringUtils;
 import ru.tolymhlv.tam.domain.Message;
 import ru.tolymhlv.tam.repos.MessageRepo;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.Clock;
-
 @Service
 public class MessageService {
 
-    @Autowired
-    private MessageRepo messageRepo;
+    private final MessageRepo messageRepo;
 
-    public String getDateDefaultFormat(Clock date) {
-        DateFormat df = new SimpleDateFormat("dd.MM.yyyy");
-        return df.format(date.millis());
+    @Autowired
+    public MessageService(MessageRepo messageRepo) {
+        this.messageRepo = messageRepo;
     }
 
     public Iterable<Message> allMessageWithFilter(String filterMessageText) {
@@ -32,4 +27,14 @@ public class MessageService {
 
         return messages;
     }
+
+    public Iterable<Message> allMessage() {
+        return messageRepo.findAll();
+    }
+
+    public Iterable<Message> addMessage(Message message) {
+        messageRepo.save(message);
+        return messageRepo.findAll();
+    }
+
 }
