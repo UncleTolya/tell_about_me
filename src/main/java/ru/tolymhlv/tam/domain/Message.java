@@ -1,9 +1,10 @@
 package ru.tolymhlv.tam.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.persistence.*;
+import java.time.Clock;
+import java.util.Date;
 
 @Entity
 public class Message {
@@ -13,14 +14,18 @@ public class Message {
     private Long id;
 
     private String text;
-    private String author;
+
+    private Date date;
+
 
     public Message() {
     }
 
-    public Message(String author, String text) {
+
+    public Message(String text) {
         this.text = text;
-        this.author = author;
+        this.date = new Date();
+
     }
 
     public Long getId() {
@@ -39,11 +44,12 @@ public class Message {
         this.text = text;
     }
 
-    public String getAuthor() {
-        return author;
+    public Date getDate() {
+        return date;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setDate(Date date) {
+        this.date = date;
     }
+
 }
