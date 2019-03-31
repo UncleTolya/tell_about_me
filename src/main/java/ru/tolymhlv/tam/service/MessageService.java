@@ -37,4 +37,12 @@ public class MessageService {
         return messageRepo.findAll();
     }
 
+    public boolean deleteMessage(Long id) {
+        if (messageRepo.findById(id).isPresent()) {
+            messageRepo.deleteById(id);
+        }
+        return !messageRepo.findById(id).isPresent();
+
+    }
+
 }

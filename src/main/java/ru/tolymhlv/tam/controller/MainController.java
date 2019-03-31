@@ -49,11 +49,11 @@ public class MainController {
     @PostMapping("/main")
     public String add(
             @RequestParam(name = "messageText", required = false, defaultValue = "Default message text") String messageText,
-            @RequestParam("messagePicture") MultipartFile multipartFile,
+            @RequestParam(name = "messagePicture", required = false) MultipartFile messagePicture,
             Model model) {
         Message message = new Message(messageText);
-        if (fileService.fileNameIsValid(multipartFile)) {
-            String tempFileName = fileService.getTempFileName(multipartFile);
+        if (fileService.fileNameIsValid(messagePicture)) {
+            String tempFileName = fileService.getTempFileName(messagePicture);
             message.setFilePicture(tempFileName);
         }
         model.addAttribute("messages", messageService.addMessage(message));

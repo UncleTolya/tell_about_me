@@ -25,7 +25,7 @@
                 integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
                 crossorigin="anonymous"></script>
 
-        <div class="container mt-5">
+        <div class="container mt-5" style="font-family: 'Courier New',serif">
             <#nested>
         </div>
     </body>
