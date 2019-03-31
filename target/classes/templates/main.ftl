@@ -1,31 +1,40 @@
 <#import "parts/common.ftl" as c>
 <@c.page>
     <div>
+
         <div class="container">
             <h1 class="display-2">the sign board</h1>
             <#--<p class="lead">or about something else</p>-->
             <hr class="my-2">
         </div>
         <#--<div class="container">-->
-        <div class="row justify-content-between m-1">
-            <div class="col-4">
-                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse"
-                        data-target="#collapseMessageForm" aria-expanded="false" aria-controls="collapseExample">
-                    leave an anonymous sign
-                </button>
-            </div>
-            <#--<div class="input-group" >-->
-            <form class="input-group col-4" method="get" action="/main">
-                <input type="text" class="form-control" name="filterMessageText" placeholder="filter"
-                       aria-label="filter's text" aria-describedby="button-addon2" value="${filterMessageText!""}">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">search</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="">
+                        <button class="btn btn-outline-secondary" style="max-width: 18rem;" type="button" data-toggle="collapse"
+                                data-target="#collapseMessageForm" aria-expanded="true"
+                                aria-controls="collapseExample">leave an anonymous sign
+                        </button>
+                    </div>
+                    <#--<div class="input-group" >-->
+                    <div class="mt-3">
+                        <form class="input-group" style="max-width: 18rem;" method="get" action="/main">
+                            <input type="text" class="form-control" name="filterMessageText" placeholder="filter"
+                                   aria-label="filter's text" aria-describedby="button-addon2"
+                                   value="${filterMessageText!""}">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">search
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </form>
-            <#--</div>-->
+                <#--</div>-->
+            </div>
         </div>
         <#--</div>-->
-        <div class="collapse m-3" id="collapseMessageForm">
+        <div class="collapse m-3" style="max-width: 65rem;" id="collapseMessageForm">
             <form method="post" action="/main" enctype="multipart/form-data">
                 <#--<input type="text" name="messageText" placeholder="Write any text. You can add a pic.">-->
                 <p>
@@ -58,7 +67,7 @@
         <#--</form>-->
         <#--</div>-->
         <div class="card-columns">
-            <#list messages as message>
+            <#list messages?reverse as message>
 
             <div class="card border-secondary m-3" style="max-width: 18rem;">
                 <div class="card-header">#${message.id}, ${message.date}</div>
