@@ -4,7 +4,7 @@
     <head>
         <title>springsite</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <link rel="stylesheet" href="/static/style.css">
+        <link rel="stylesheet" href="/static/css/style.css">
 
         <!-- Required meta tags -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,6 +15,8 @@
               crossorigin="anonymous">
     </head>
     <body>
+        <!-- Social Share Kit JS -->
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
                 crossorigin="anonymous"></script>
@@ -28,13 +30,14 @@
         <div class="container mt-5" style="font-family: 'Courier New',serif">
             <#nested>
         </div>
+
     </body>
     <footer>
-        <div class="text-center">
+        <div class="text-center mt-8">
             <a href="https://github.com/UncleTolya/thesignboard"><img src="https://img.icons8.com/windows/32/000000/github.png" class="rounded" alt="icon"></a>
             <a href="http://t.me/myhlv"><img src="https://img.icons8.com/windows/32/000000/telegram-app.png" class="rounded" alt="icon"></a>
         </div>
-        <div class="text-center" style="font-family: 'Courier New',serif">developed by tolymhlv</div>
+        <div class="text-center" style="font-family: 'Courier New',serif">_developed by tolymhlv</div>
     </footer>
 </html>
 </#macro>
