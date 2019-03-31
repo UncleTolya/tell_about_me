@@ -31,9 +31,10 @@
     </body>
     <footer>
         <div class="text-center">
-            <img href="https://github.com/UncleTolya/thesignboard" src="https://img.icons8.com/windows/32/000000/github.png" class="rounded" alt="icon">
-            <img href="http://t.me/myhlv" src="https://img.icons8.com/windows/32/000000/telegram-app.png" class="rounded" alt="icon">
+            <a href="https://github.com/UncleTolya/thesignboard"><img src="https://img.icons8.com/windows/32/000000/github.png" class="rounded" alt="icon"></a>
+            <a href="http://t.me/myhlv"><img src="https://img.icons8.com/windows/32/000000/telegram-app.png" class="rounded" alt="icon"></a>
         </div>
+        <div class="text-center" style="font-family: 'Courier New',serif">developed by tolymhlv</div>
     </footer>
 </html>
 </#macro>
