@@ -1,2 +1,2 @@
-# tell_about_me
-Just a simple site-form for collecting opinions about me
+# sign board
+Just a simple site-board for anonymous signs
