@@ -29,5 +29,11 @@
             <#nested>
         </div>
     </body>
+    <footer>
+        <div class="text-center">
+            <img href="https://github.com/UncleTolya/thesignboard" src="https://img.icons8.com/windows/32/000000/github.png" class="rounded" alt="icon">
+            <img href="http://t.me/myhlv" src="https://img.icons8.com/windows/32/000000/telegram-app.png" class="rounded" alt="icon">
+        </div>
+    </footer>
 </html>
 </#macro>

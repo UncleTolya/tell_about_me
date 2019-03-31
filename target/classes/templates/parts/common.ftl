@@ -29,5 +29,10 @@
             <#nested>
         </div>
     </body>
+    <footer>
+        <div class="text-center">
+            <img src="https://img.icons8.com/windows/32/000000/github.png" class="rounded" alt="icon">
+        </div>
+    </footer>
 </html>
 </#macro>
