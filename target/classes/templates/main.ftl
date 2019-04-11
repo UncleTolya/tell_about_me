@@ -3,9 +3,11 @@
     <div>
 
         <div class="container">
-            <h1 class="display-2 text-center"> _the sign board</h1>
-            <#--<p class="lead">or about something else</p>-->
-            <hr class="my-2">
+            <a href="http://sb.myhlv.ru" class="text-dark btn" style="display:block" >
+                <h1 class="display-2 text-center"> _the sign board</h1>
+                <#--<p class="lead">or about something else</p>-->
+                <hr class="my-2">
+            </a>
         </div>
         <#--<div class="container">-->
         <div class="container">
@@ -79,7 +81,7 @@
 
                 <div class="card border-secondary m-3" style="max-width: 20rem;">
                     <div class="card-header">#${message.id}, ${message.date}</div>
-                    
+
                     <div class="card-body text-secondary">
                         <#--<h5 class="card-title">Secondary card title</h5>-->
                         <p class="card-text">_${message.text}</p>

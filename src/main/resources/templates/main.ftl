@@ -3,9 +3,11 @@
     <div>
 
         <div class="container">
-            <h1 class="display-2 text-center"> _the sign board</h1>
-            <#--<p class="lead">or about something else</p>-->
-            <hr class="my-2">
+            <a href="http://sb.myhlv.ru" class="text-dark btn" style="display:block" >
+                <h1 class="display-2 text-center"> _the sign board</h1>
+                <#--<p class="lead">or about something else</p>-->
+                <hr class="my-2">
+            </a>
         </div>
         <#--<div class="container">-->
         <div class="container">
