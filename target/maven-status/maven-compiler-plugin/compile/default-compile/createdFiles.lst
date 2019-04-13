@@ -1,0 +1,7 @@
+ru/myhlv/sb/Application.class
+ru/myhlv/sb/repos/MessageRepo.class
+ru/myhlv/sb/config/MvcConfig.class
+ru/myhlv/sb/service/FileService.class
+ru/myhlv/sb/controller/MainController.class
+ru/myhlv/sb/domain/Message.class
+ru/myhlv/sb/service/MessageService.class

@@ -4,7 +4,13 @@
     <head>
         <title>springsite</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="/static/fonts">
+        <style>
+            @font-face {
+                font-family: Corner_Cyr; /* Гарнитура шрифта */
+                src: url(/fonts/Corner_Cyr.ttf); /* Путь к файлу со шрифтом */
+            }
+        </style>
 
         <!-- Required meta tags -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,7 +33,7 @@
                 integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
                 crossorigin="anonymous"></script>
 
-        <div class="container mt-5" style="font-family: 'Courier New',serif">
+        <div class="container mt-5" style="font-family: 'Corner_Cyr',serif">
             <#nested>
         </div>
 

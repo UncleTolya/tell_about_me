@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <p>
-                    <button class="btn btn-primary" type="submit">_leave sign on the board</button>
+                    <button class="btn btn-info" type="submit">_leave sign on the board</button>
                 </p>
             </form>
 

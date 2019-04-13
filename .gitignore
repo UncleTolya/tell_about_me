@@ -1,2 +1,4 @@
 .idea
 uploads
+main/resources/application.properties
+main/resources/application-dev.properties
